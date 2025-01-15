@@ -9,3 +9,8 @@
 <br>
 <input [(ngModel)]="courseDescription" placeholder="Entrez la description">
 <p>{{courseDescription}}</p>
+<br>
+<ul>
+    <li *ngFor="let course of courses">{{ course.name }}:{{course.description}}</li>
+</ul>
+   

@@ -11,6 +11,11 @@ export class CoursesComponent {
   courseName: string = "Angular Avance";
   isDisabled: boolean = true;
   courseDescription: string = "";
+  courses: { name: string; description: string }[] = [
+    { name: "Angular.js", description: "Un framework JavaScript pour construire des applications web." },
+    { name: "React.js", description: "Une bibliothèque JavaScript pour construire des interfaces utilisateur." },
+    { name: "Vue.js", description: "Un framework progressif pour construire des interfaces utilisateur." }
+  ]; 
 
 
   startCourse():void{
