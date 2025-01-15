@@ -4,5 +4,8 @@
 
 <button [disabled]="isDisabled">Commencer</button>
 
-
+<br>
 <button (click)="startCourse()">Commencer le cours</button>
+<br>
+<input [(ngModel)]="courseDescription" placeholder="Entrez la description">
+<p>{{courseDescription}}</p>
