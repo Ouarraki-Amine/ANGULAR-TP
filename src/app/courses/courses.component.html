@@ -18,6 +18,6 @@
 <h1>Liste des cours</h1>
 <ul>
   <li *ngFor="let course of courses">
-    <app-course-item [course]="course"></app-course-item>
+    <app-course-item [course]="course" (courseSelected)="onCourseSelected($event)"></app-course-item>
   </li>
 </ul>

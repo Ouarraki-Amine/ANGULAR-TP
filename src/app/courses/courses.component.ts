@@ -23,4 +23,8 @@ export class CoursesComponent {
   ngOnInit(): void {
     this.courses = this.courseService.getCourses();
   }
+
+  onCourseSelected(courseName: string): void {
+    console.log(`Le cours selectionne est : ${courseName}`);
+  }
 }
